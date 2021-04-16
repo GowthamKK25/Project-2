@@ -1,13 +1,13 @@
 
 
-var svgWidth = 960;
-var svgHeight = 500;
+var svgWidth = 1000;
+var svgHeight = 750;
 
 var margin = {
-  top: 20,
-  right: 40,
-  bottom: 80,
-  left: 100
+  top: 30,
+  right: 30,
+  bottom: 85,
+  left: 200
 };
 
 var width = svgWidth - margin.left - margin.right;
@@ -26,7 +26,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Initial Params
-var chosenXAxis = "revenue";
+var chosenXAxis = "profit";
 
 // function used for updating x-scale var upon click on axis label
 function xScale(stockData, chosenXAxis) {
@@ -68,8 +68,8 @@ function updateToolTip(chosenXAxis, circlesGroup) {
 
   var label;
 
-  if (chosenXAxis === "revenue") {
-    label = "revenue :";
+  if (chosenXAxis === "profit") {
+    label = "profit(in millions) :";
   }
   else {
     label = "Rank:";
@@ -77,7 +77,7 @@ function updateToolTip(chosenXAxis, circlesGroup) {
 
   var toolTip = d3.tip()
     .attr("class", "tooltip")
-    .offset([80, -60])
+    .offset([100, -60])
     .html(function(d) {
       return (`${d.company}<br>${label} ${d[chosenXAxis]}`);
     });
@@ -143,14 +143,14 @@ d3.csv("fortune500-2019.csv").then(function(stockData, err) {
   var labelsGroup = chartGroup.append("g")
     .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
-  var hairLengthLabel = labelsGroup.append("text")
+  var profitLengthLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 20)
     .attr("value", "profit") // value to grab for event listener
     .classed("active", true)
     .text("Profit in millions");
 
-  var albumsLabel = labelsGroup.append("text")
+  var rankLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 40)
     .attr("value", "rank") // value to grab for event listener
@@ -183,7 +183,7 @@ d3.csv("fortune500-2019.csv").then(function(stockData, err) {
 
         // functions here found above csv import
         // updates x scale for new data
-        xLinearScale = xScale(hairData, chosenXAxis);
+        xLinearScale = xScale(stockData, chosenXAxis);
 
         // updates x axis with transition
         xAxis = renderAxes(xLinearScale, xAxis);
@@ -195,19 +195,19 @@ d3.csv("fortune500-2019.csv").then(function(stockData, err) {
         circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
 
         // changes classes to change bold text
-        if (chosenXAxis === "num_albums") {
-          albumsLabel
+        if (chosenXAxis === "profit") {
+            rankLabel
             .classed("active", true)
             .classed("inactive", false);
-          hairLengthLabel
+            profitLengthLabel
             .classed("active", false)
             .classed("inactive", true);
         }
         else {
-          albumsLabel
+          rankLabel
             .classed("active", false)
             .classed("inactive", true);
-          hairLengthLabel
+          profitLengthLabel
             .classed("active", true)
             .classed("inactive", false);
         }
