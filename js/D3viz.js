@@ -5,7 +5,7 @@ var svgHeight = 750;
 
 var margin = {
   top: 30,
-  right: -30,
+  right: 30,
   bottom: 85,
   left: 200
 };
@@ -96,7 +96,7 @@ function updateToolTip(chosenXAxis, circlesGroup) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("fortune500-2019.csv").then(function(stockData, err) {
+d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
   if (err) throw err;
 
   // parse data
