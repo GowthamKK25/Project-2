@@ -39,10 +39,10 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-primary">
       <h3 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
       style="font-size: larger"></h3>
-  
+    
       <a class="navbar-brand offset-0.25 alert-secondary bigger-block" href="index.html" 
               aria-colindex=rgb(0,238, 255)><h5>Finance and Stock</h5></a>
-    ​
+    
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -73,7 +73,7 @@
             <!-- NavBar: Data web page link -->
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
             <li class="nav-item">
-              <a class="nav-link" href="Pages/data.html">Data</a>
+              <a class="nav-link" href="Pages/about.html">About</a>
             </li>
         </ul>
       </div>
@@ -82,12 +82,14 @@
     <!-- End:  Navigation Bar -->
     <!-- ######################################################################################## -->
     <br><br>  
+
     <!-- Header -->
-    <h3 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center" style="padding:10px">
+    <!-- <h3 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center" style="padding:10px">
       <strong> Financial Stock Market Visualizations </strong></h3>
       <img src="Images/fin_main_01.PNG" class="center"> 
       <br><br>
-      <h5>This site examines three different interactive visualizations that describe the status of the financial stock market.</h5> <br>
+      <h5>This site examines three different interactive visualizations that describe the financial stock market & real estate.</h5> 
+      <br> -->
       
     <!-- ######################################################################################## -->
     <!-- START:  CONTAINER -->
@@ -98,22 +100,20 @@
       <div class="row">
           <div class="col-md-8">
               <div class="col-md-12">
-                  <h3> Finance ... topic #1 ... </topic></h3>
-                  <hr>
-                  <img class="img-fluid float-left p-3" src="Images/fin_000.jfif" 
-                      width="50%">
-    ​
+                <h3 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center" style="padding:10px">
+                  <strong> Financial Stock Market Visualizations </strong></h3>                  <hr>
+                  <!-- <img class="img-fluid float-left p-3" src="Images/fin_000.jfif" width="50%"> -->
+    ​              <img class="img-fluid float-left p-3" src="Images/fin_main_01.PNG" width="50%">
+    <h5>This site examines three different interactive visualizations that describe the financial stock market & real estate.</h5> 
+
                   <p class="parpad">
                     <br>
-                    The purpose of this project was to analyze how financial stock market data ......
+                    The project analyzes the financial stock market data. 
                     To accomplish this analysis, stock market data from Quandl was used to assemble a dataset 
-                    on over 500 stocks.  
-                    <br><br>
-                    After assembling the dataset, geomaps, plotly & D3 were used to plot various aspects of the stock vs. 
-                    x1... Factors included: y1, y2, y3, etc....  This site provides the source data and visualizations created 
-                    as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                    <br><br> 
-                    To keep up to date on latest stock, these sources can help! 
+                    on over 500 stocks.  After assembling the dataset, plotly and D3 were used to plot various aspects of the stock and a geomap
+                    was created for the real estate dataset.
+                    <br> <br>
+                    To keep up to date on the latest stock, these resources can help! 
                     <p><a href="https://finance.yahoo.com/" id="w3s">Yahoo Finance</a> and
                     <a href="https://www.marketwatch.com/" id="w3s">Market Watch</a></p> 
                     <a href="http://127.0.0.1:5000/" id="w3s">Flask Data (run locally)</a></p> 
@@ -134,14 +134,17 @@
                           <a href="Pages/1_geomap.html"><img class = "img-fluid" src="Images/sac_map_01.PNG" 
                               width="100%"></a> 
                       </div>
+                      <br>
                       <div class="col-3 col-md-6">
                           <a href="Pages/2_plotly.html"><img src="Images/stock_graph.PNG" 
                             width="100%"></a> 
                       </div>
+                      <br>
                       <div class="col-3 col-md-6">
                           <a href="Pages/3_d3.html"><img src="Images/plot_graph.PNG" 
                             width="100%"></a> 
                       </div>
+                      <br>
                       <!-- <div class="col-3 col-md-6">
                           <a href="Pages/4th_option.html"><img src="Images/fin_004.jfif" 
                             width="100%"></a> 
