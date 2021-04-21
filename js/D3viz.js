@@ -147,6 +147,7 @@ d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
     .attr("x", 0)
     .attr("y", 20)
     .attr("value", "profit") // value to grab for event listener
+    .style("font-weight","bold")
     .classed("active", true)
     .text("Profit in millions");
     
