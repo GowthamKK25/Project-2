@@ -16,8 +16,19 @@
       <title>Project 2</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="styles.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("#w3s").attr("href", function(i, origValue){
+      return origValue + "/jquery/"; 
+       
+        });
+       }); 
+      }); 
       
+      </script> 
+
     </head>
     ​
     <body>
@@ -101,7 +112,11 @@
                     After assembling the dataset, geomaps, plotly & D3 were used to plot various aspects of the stock vs. 
                     x1... Factors included: y1, y2, y3, etc....  This site provides the source data and visualizations created 
                     as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                  </p>
+                    <br><br> 
+                    To keep up to date on latest stock, these sources can help! 
+                    <p><a href="https://finance.yahoo.com/" id="w3s">Yahoo Finance</a> and
+                    <a href="https://www.marketwatch.com/" id="w3s">Market Watch</a></p> 
+                  </p> 
               </div>
           </div>
     ​

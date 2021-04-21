@@ -136,8 +136,8 @@ d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d.revenue))
     .attr("r",2.5)
-    .attr("fill", "black")
-    .attr("opacity", ".5");
+    .attr("fill", "blue")
+    .attr("opacity", ".35");
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
