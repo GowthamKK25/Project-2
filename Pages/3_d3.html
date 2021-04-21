@@ -2,13 +2,9 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>D3 page</title>
+  <title>plotly page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css"> 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -29,84 +25,81 @@
   <div class = "collapse navbar-collapse" id="navbarMenu">
 ​
   <ul class="navbar-nav ml-auto">
-     
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- NavBar: Plots dropdown -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
-           role="button" data-toggle="dropdown">Plots</a>  
-           <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-            <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
-            <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
-            <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
-            <!-- <a class="dropdown-item" href="../Pages/4th_option.html">opt 4</a>  -->
-           </div>
-      </li>
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-        <!-- NavBar: Comparison web page link -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-        <li class="nav-item">
-        <a class="nav-link" href="../Pages/comparison.html">Comparison</a>
+    
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- NavBar: Plots dropdown -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
+             role="button" data-toggle="dropdown">Plots</a>  
+             <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
+              <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
+              <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
+              <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
+              <!-- <a class="dropdown-item" href="../Pages/4th_option.html">opt 4</a>  -->
+             </div>
         </li>
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-        <!-- NavBar: Data web page link -->
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
-        <li class="nav-item">
-          <a class="nav-link" href="../Pages/data.html">Data</a>
-        </li>
-    </ul>
-  </div>
-  </nav>
-<!-- ######################################################################################## -->
-<!-- End:  Navigation Bar -->
-<!-- ######################################################################################## -->
-<br><br>  
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <!-- NavBar: Comparison web page link -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <li class="nav-item">
+          <a class="nav-link" href="../Pages/comparison.html">Comparison</a>
+          </li>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+          <!-- NavBar: Data web page link -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/data.html">Data</a>
+          </li>
+      </ul>
+    </div>
+    </nav>
+  <!-- ######################################################################################## -->
+  <!-- End:  Navigation Bar -->
+  <!-- ######################################################################################## -->
+  <br><br>  
 
-  <div class="container">
-    <!-- Header -->
-    <div class="row">
-      <div class="col-lg-12"></div>
-      <!-- <img src="../Images/fin_002.jfif" /> -->
-      <h1 style="color: red">
-        <strong>
-          PLOTLY
-        </strong>
+  
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+  <!-- CONTAINER START -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <div class = "container">
+    <div class = "row">
+      <h1 style="color: rgb(55, 0, 255)", style="font-family: Arial", style="font-size: larger">
+      <strong>
+      <!-- <img src="../Images/xyz???.png">  -->
+       D3 
+      </strong>
       </h1>
     </div>
     <div class = "row"></div>
-    
-     <!-- ######################################################################## -->
-     <!-- Plotly page -->
-     <!-- ######################################################################## -->
-        <img src="../Images/fin_002.jfif" alt="Plotly"> 
-        <h3>
-                <form class="form-inline">
-    <div class="form-group">
-      <label for="stockInput"> </label>
-      <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
-    </div>
-    <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
-  </form>
-  <div id="plot"></div>
-  <script src="plots.js"></script>
 
+     <!--#######################################################################
+        D3 page
+        ########################################################################-->
+        <img src="../Images/fin_003.jfif" alt="D3"> 
+        <h3>
+
+          D3 - ... add brief description / summary ...
         </h3>
       </div>
-    </div>
+    </div> 
+
+    <div class="chart">
+		</div>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+		<script type="text/javascript" src="../js/D3viz.js"></script>
+
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
   <!-- CONTAINER END -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-         <form class="form-inline">
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../js/plots.js"></script>
-</body
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body
 
 </html>
 
