@@ -149,23 +149,26 @@ d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
     .attr("value", "profit") // value to grab for event listener
     .classed("active", true)
     .text("Profit in millions");
-
-  var rankLabel = labelsGroup.append("text")
+    
+ 
+    var rankLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 40)
     .attr("value", "rank") // value to grab for event listener
     .classed("inactive", true)
     .text("Rank of the company");
-
-  // append y axis
+    
+    
+ 
+    // append y axis
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 0 - 75)
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
-    .text("Revenue in millions");
-
+    .text("Revenue in millions")
+    .style("font-weight","bold");
   // updateToolTip function above csv import
   var circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
 
