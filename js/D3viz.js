@@ -160,7 +160,7 @@ d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
   // append y axis
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - margin.left)
+    .attr("y", 0 - 75)
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
