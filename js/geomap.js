@@ -77,10 +77,10 @@ function renderHouses(houses){
       radius: houses[i].price / 500   // Adjust radius of circle by dividing the price
     }).bindPopup(
         "<h4>" + houses[i].street + 
-        "</h4> <hr> <h5>Price: " + houses[i].price + "</h5>" +
-        "<h5>Sq_ft: " + houses[i].sq__ft + "</h5>" +
-        "<h5>BR: " + houses[i].beds + 
-        "   BA: " + houses[i].baths + "</h5>" +
+        "</h4> <hr> <h4>Price: " + houses[i].price + "</h4>" +
+        "<h4>Sq_ft: " + houses[i].sq__ft + "</h4>" +
+        "<h4>BR: " + houses[i].beds + 
+        "   BA: " + houses[i].baths + "</h4>" +
         "<h5>Date: " + houses[i].sale_date + "</h5>" 
         ).addTo(myMap);
   }  // end of for loop for function

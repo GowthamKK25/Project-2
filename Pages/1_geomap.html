@@ -2,9 +2,9 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Geomap -- 1_geomap place holder Page</title>
+  <title>Geomap</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
   style="font-size: larger"></h3>
 
   <a class="navbar-brand offset-0.25 alert-secondary bigger-block" href="../index.html" 
-          aria-colindex=rgb(0,238, 255)><h5>Finance and Stock</h5></a>
+          aria-colindex=rgb(0,238, 255)><h4>Finance</h4></a>
 
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
@@ -74,16 +74,26 @@
                   <h4>The following map reflects real estate home prices for Sacramento, CA.</h4> 
                   <p class="parpad">
                     <br>
-                  <!-- open geomap web page in current page -->
-                  <iframe src="../Pages/1a_geomap.html" name="targetframe" 
-                      allowTransparency="true" scrolling="no" frameborder="0"
-                      width=2050px height=700px>
-                  </iframe>
                   </p> 
               </div>
           </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- open geomap web page in current page -->
+          <iframe src="../Pages/1a_geomap.html" name="targetframe" 
+                  allowTransparency="true" scrolling="no" frameborder="0" 
+                  width=2090px height=700px>
+          </iframe>
+
+          <!-- <iframe style="width: 100%;border:3px solid black;" 
+                  src="../Pages/1a_geomap.html" id="Iframe">
+          </iframe>
+          -->
+        </div>
+      </div>
+
+    </div> <!-- div end of container  -->
     ​
     <!-- ######################################################################################## -->
     <!-- END:  CONTAINER -->
