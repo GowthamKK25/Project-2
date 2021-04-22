@@ -18,6 +18,7 @@ var height = svgHeight - margin.top - margin.bottom;
 var svg = d3
   .select(".chart")
   .append("svg")
+  .style("background-color", 'white')
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
