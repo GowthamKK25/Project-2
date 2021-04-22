@@ -5,9 +5,9 @@ var svgHeight = 750;
 
 var margin = {
   top: 30,
-  right: 30,
+  right: 60,
   bottom: 85,
-  left: 200
+  left: 100
 };
 
 var width = svgWidth - margin.left - margin.right;
@@ -164,7 +164,7 @@ d3.csv("../Resources/fortune500-2019.csv").then(function(stockData, err) {
     // append y axis
   chartGroup.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - 75)
+    .attr("y", 0 - 80)
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
