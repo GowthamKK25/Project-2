@@ -2,43 +2,42 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>plotly page</title>
+  <title>D3</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../styles.css">
-	
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
-<!-- ######################################################################################## -->
-<!-- Begin:  Navigation Bar -->
-<!-- ######################################################################################## -->
-<nav class="navbar navbar-expand-sm navbar-light bg-primary">
-  <h3 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
-  style="font-size: larger"></h3>
-
-  <a class="navbar-brand offset-0.25 alert-secondary bigger-block" href="../index.html" 
-          aria-colindex=rgb(0,238, 255)><h4>Finance</h4></a>
-​
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class = "collapse navbar-collapse" id="navbarMenu">
-​
-  <ul class="navbar-nav ml-auto">
-    
+  <!-- ######################################################################################## -->
+  <!-- Begin:  Navigation Bar -->
+  <!-- ######################################################################################## -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+    <h3 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
+    style="font-size: larger"></h3>
+  
+    <a class="navbar-brand offset-0.25 alert-secondary bigger-block" href="../index.html" 
+            aria-colindex=rgb(0,238, 255)><h4>Finance</h4></a>
+  
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class = "collapse navbar-collapse" id="navbarMenu">
+  ​
+    <ul class="navbar-nav ml-auto">
+       
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- NavBar: Plots dropdown -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
              role="button" data-toggle="dropdown">Plots</a>  
-             <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-              <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
-              <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
-              <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
-              <!-- <a class="dropdown-item" href="../Pages/4th_option.html">opt 4</a>  -->
-             </div>
+          <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
+            <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
+            <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
+           <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
+           <!-- <a class="dropdown-item" href="Pages/4th_option.html">4th option</a>  -->
+          </div>
         </li>
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
           <!-- NavBar: Comparison web page link -->
@@ -50,7 +49,7 @@
           <!-- NavBar: Data web page link -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
           <li class="nav-item">
-            <a class="nav-link" href="../Pages/about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
       </ul>
     </div>
@@ -59,55 +58,69 @@
   <!-- End:  Navigation Bar -->
   <!-- ######################################################################################## -->
   <br><br>  
-
-  
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-  <!-- CONTAINER START -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <div class = "container">
-    <div class = "row">
-      <h1 style="color: rgb(55, 0, 255)", style="font-family: Arial", style="font-size: larger">
-      <h1>
-      <!-- <img src="../Images/xyz???.png">  -->
-               
-               
-      </h1>
-      </h1>
-    </div>
-    <div class = "row"></div>
-
-     <!--#######################################################################
-        D3 page
-        ########################################################################-->
-        <img src="../Images/fin_003.jfif" alt="D3"> 
-        <h5>
-
-          D3 Visual - The following visualization represents the fortune 500 companies as of 2019 and their revenue relative to their
-          revenue and rank. 
-
-        </h5>
-      </div>
-    </div> 
-
-    <div class="chart">
-		</div>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-		<script type="text/javascript" src="../js/D3viz.js"></script>
-
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-  <!-- CONTAINER END -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+  <!-- ######################################################################################## -->
+  <!-- START:  CONTAINER -->
+  <!-- ######################################################################################## -->
+         
+  <!--create container, rows and columns and add images -->
+  <div class="container-fluid">    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="col-md-12">
+              <h2 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center" style="padding:10px">
+                <strong> D3 </strong></h2><hr>
+  ​              <img class="img-fluid float-left p-3" src="../Images/fin_003.jfif" width="50%">
+                <h5> The D3 visual represents the fortune 500 companies as of 2019 and 
+                  their profit and rank against their revenue. 
+                </h5> 
+                <p class="parpad">
+                  <br> 
+                </p> 
+            </div>
+        </div>
+  ​
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- VISUALIZATION:  graphs with hyperlinks, still on the same row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+        <br> <br>
+        <div class="col-md-9">
+            <div class="col-md-12">
+                <h3>  </h3>
+                <div class="row">
+                    <div class="col-3 col-md-12">
+                      <p class="parpad">
+                        <br>
+                      <!-- insert the Plotly graph/code here -->
+                    <h3> Fortune 500 Companies (2019) </h3>  
+                    <div class="chart">
+		                </div>
+                        <br> 
+                      </p> 
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  ​
+  <!-- ######################################################################################## -->
+  <!-- END:  CONTAINER -->
+  <!-- ######################################################################################## -->
+  ​
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  scripts for auto screen adjustments -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  ​
+      <!-- needed for the graph -->
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+      <script type="text/javascript" src="../js/D3viz.js"></script>
+
   </body
-
-</html>
-
-
-
-
-
+  ​
+  </html>

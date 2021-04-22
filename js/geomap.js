@@ -104,7 +104,7 @@ var colors = ["red", "violet", "orange", "aquamarine", "green", "blue"];
 var labels = [];
 
 // Add min & max
-var legendInfo = "<h4>Sacramento Home Prices " + "</h4>" +
+var legendInfo = "<h4>Sacramento Home Prices (2008)" + "</h4>" +
   "</h5> <200k, <300k, <400k, <500k ... >600k)" + "</h5>" + "<h5>"
   "<div class=\"labels\">" +
     // "<div class=\"min\">" + limits[0] + "</div>" +

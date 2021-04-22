@@ -2,53 +2,54 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Comparison Page</title>
+  <title>Comparison</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
 
-<!-- ######################################################################################## -->
-<!-- Begin:  Navigation Bar -->
-<!-- ######################################################################################## -->
-
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <h5 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
+  <!-- ######################################################################################## -->
+  <!-- Begin:  Navigation Bar -->
+  <!-- ######################################################################################## -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+    <h3 style="color:rgb(0, 238, 255)", style="font-family: Arial", 
     style="font-size: larger"></h3>
   
-    <a href="../index.html" class="navbar-brand" style="color:rgb(14, 32, 82)"><h5>Finance & Stock</h3></a> 
+    <a class="navbar-brand offset-0.25 alert-secondary bigger-block" href="../index.html" 
+            aria-colindex=rgb(0,238, 255)><h4>Finance</h4></a>
+  
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class = "collapse navbar-collapse" id="navbarMenu">
-  
+  ​
     <ul class="navbar-nav ml-auto">
        
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- NavBar: Plots dropdown -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->       
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
-           role="button" data-toggle="dropdown">Plots</a>  
-        <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
-         <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
-         <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
-         <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
-         <!-- <a class="dropdown-item" href="../Pages/4th_option.html">opt 4</a>  -->
-        </div>
-      </li>
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarPlotsDropdown"
+             role="button" data-toggle="dropdown">Plots</a>  
+          <div class="dropdown-menu" aria-labelledby="navbarPlotsDropdown">
+            <a class="dropdown-item" href="../Pages/1_geomap.html">Geomap</a>
+            <a class="dropdown-item" href="../Pages/2_plotly.html">Plotly</a>
+           <a class="dropdown-item" href="../Pages/3_d3.html">D3</a>
+           <!-- <a class="dropdown-item" href="Pages/4th_option.html">4th option</a>  -->
+          </div>
+        </li>
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
           <!-- NavBar: Comparison web page link -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
           <a class="nav-link" href="../Pages/comparison.html">Comparison</a>
-          </li>
+          </li> -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
           <!-- NavBar: Data web page link -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->         
           <li class="nav-item">
-            <a class="nav-link" href="../Pages/data.html">Data</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
       </ul>
     </div>
@@ -57,79 +58,67 @@
   <!-- End:  Navigation Bar -->
   <!-- ######################################################################################## -->
   <br><br>  
-
-  <!-- ------------------------------------------------------------------------- -->
-  <!-- START CONTAINER -->
-  <!-- ------------------------------------------------------------------------- -->
-  <div class="container-fluid">
-    <!-- Row with 1 column -->
+    
+  <!-- ######################################################################################## -->
+  <!-- START:  CONTAINER -->
+  <!-- ######################################################################################## -->
+         
+  <!--create container, rows and columns and add images -->
+  <div class="container-fluid">    
     <div class="row">
-      <div class="col-md-6">
-        <h2 style="color:rgb(65, 158, 135)">Comparison: X vs Y</h2>
-        <br>
-        <br>
-          <!--
-          <p>Click any plot to get an in-depth analysis.</p>
-          -->
-      </div>
+        <div class="col-md-4">
+            <div class="col-md-12">
+              <h2 style="color:blue", style="font-family: Arial", style="font-size: large", text-align="center" style="padding:10px">
+                <strong> Comparison </strong></h2><hr>
+                <!-- <img class="img-fluid float-left p-3" src="Images/fin_000.jfif" width="50%"> -->
+  ​              <img class="img-fluid float-left p-3" src="../Images/fin_003.jfif" width="50%">
+                <h5> The comparison of stock against real estate. 
+                </h5> 
+                <p class="parpad">
+                  <br>
+                  <!-- add verbiage here if needed -->
+                  <br> 
+                </p> 
+            </div>
+        </div>
+  ​
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- VISUALIZATION:  graphs with hyperlinks, still on the same row -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --> 
+        <br> <br>
+        <div class="col-md-8">
+            <div class="col-md-12">
+                <h3>  </h3>
+                <div class="row">
+                    <div class="col-3 col-md-12">
+                      <p class="parpad">
+                        <br>
+
+                      <!-- insert the Plotly graph/code here -->
+                      .... insert comparison info here ...
+                      
+                        <br> 
+                      </p> 
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
-
-     <!--#######################################################################
-         Comparison page
-        ########################################################################-->
-  
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- Row #2: labels -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->  
-      <!-- Row with 2 columns -->
-    <div class="row">
-
-      <!-- First of two columns -->
-      <div class="col-md-6">
-        <h3 style="text-align:center;"> vs. x1</h3>
-        <img src="../Images/fin_001.jfif"> 
-      </div>
-
-      <!-- Second of two columns -->
-      <div class="col-md-6">
-        <h3 style="text-align:center;"> vs. x2</h3>
-        <img src="../Images/fin_002.jfif"> 
-      </div>
-    </div>
-      
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- Row #4: labels & graphs -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->  
-      <!-- Row with 2 columns -->
-      <div class="row">
-
-        <!-- First of two columns -->
-        <div class="col-md-6">
-          <h3 style="text-align:center;"> vs. x3</h3>
-          <img src="../Images/fin_003.jfif"> 
-        </div>
-  
-        <!-- Second of two columns (place holder for 4th option)--> 
-        <!-- <div class="col-md-6">
-          <h3 style="text-align:center;"> vs. x4</h3>
-          <img src="../Images/fin_004.jfif"> 
-        </div> -->
-        
-      </div>
-      
-  <!-- ------------------------------------------------------------------------- -->
-  <!-- END CONTAINER -->
-  <!-- ------------------------------------------------------------------------- -->
-  </div>  
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<!--  scripts for auto screen adjustments -->
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-</body
-
-</html>
+  ​
+  <!-- ######################################################################################## -->
+  <!-- END:  CONTAINER -->
+  <!-- ######################################################################################## -->
+  ​
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  scripts for auto screen adjustments -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  ​
+  </body
+  ​
+  </html>
