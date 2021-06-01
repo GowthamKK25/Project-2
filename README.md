@@ -17,6 +17,12 @@ David Zapata
 - must include some level of user-driven interaction (e.g., menus, dropdowns, textboxes)
 - final visualization should include at least three views
 
+
+# Visualizations  
+![solarized palette](https://github.com/GowthamKK25/Project-2/blob/master/Images/plot_graph.PNG)
+
+
+
 # Datasource 
 Quandl
 
